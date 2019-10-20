@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<bookstore>
+  <book category="drama">
+    <title lang="bulgarian">Everyday Italian</title>
+    <author>Giada De Laurentiis</author>
+    <year>2005</year>
+    <price>30.00</price>
+  </book>
+  <book category="fiction">
+    <title lang="english">How to kill</title>
+    <author>John Wick</author>
+    <year>2018</year>
+    <price>19.99</price>
+  </book>
+</bookstore>

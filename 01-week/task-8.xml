@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<cinema name="Cinema City Paradise">
+  <address>София, бул. Черни връх 100, в сградата на Paradise Center</address>
+  <telephones>
+    <telephone>02 903 74 74</telephone>
+  </telephones>
+
+  <email>info.paradise@cinemacity.bg</email>
+
+  <info>
+    Cinema City Paradise е второто кино на веригата в София.                                              
+    Оборудвано е с последно поколение кинотехника, прожектори Christie и 7-канален дигитален съраунд звук.                
+    Киното разполага с 14 модерни зали, 8 от които са 3D, с общ капацитет от 2166 места. 
+    14 зали означават още по-голямо разнообразие на филми, на практика на всеки 10 минути започва филм.
+  </info>
+
+  <prices>
+    <monday>
+      <cinameHall type="Normal">
+        <tickets>
+          <ticket>
+            <type>General Ticket</type>
+            <price>XX.XX</price>
+          </ticket>
+
+          <ticket>
+            <type>Discount Ticket</type>
+            <price>XX.XX</price>
+          </ticket>
+
+          <ticket>
+            <type>Premiere Ticket</type>
+            <price>XX.XX</price>
+          </ticket>
+        </tickets>
+      </cinameHall>
+
+      <cinameHall type="3D DIGITAL CINEMA">
+        <tickets>
+          <ticket>
+            <type>General Ticket</type>
+            <price>XX.XX</price>
+          </ticket>
+
+          <ticket>
+            <type>Discount Ticket</type>
+            <price>XX.XX</price>
+          </ticket>
+
+          <ticket>
+            <type>Premiere Movie</type>
+            <price>XX.XX</price>
+          </ticket>
+
+          <ticket>
+            <type>Premiere Animation</type>
+            <price>XX.XX</price>
+          </ticket>
+        </tickets>
+      </cinameHall>
+
+      <cinameHall type="4DX 3D">
+        <tickets>
+          <ticket>
+            <type>General Ticket</type>
+            <price>XX.XX</price>
+          </ticket>
+
+          <ticket>
+            <type>Discount Ticket</type>
+            <price>XX.XX</price>
+          </ticket>
+
+          <ticket>
+            <type>Premiere Movie</type>
+            <price>XX.XX</price>
+          </ticket>
+
+          <ticket>
+            <type>Premiere Animation</type>
+            <price>XX.XX</price>
+          </ticket>
+        </tickets>
+      </cinameHall>
+    </monday>
+  </prices>
+</cinema>
