@@ -45,11 +45,11 @@
 
 #### Задача 3: По дадената по-долу схема съставете XML файл
 
-![Xml schema](images/xmlSchema.png"xmlSchema")
+![Xml schema](images/xmlSchema.png)
 
 #### Задача 4: Използвайки CDATA секции, съставете XML файл, структуриращ информацията (относно логическите оператори в Excel), дадена в таблицата по-долу:
 
-![cdata sections](images/cdatasections.png"cdatasections")
+![cdata sections](images/cdatasections.png)
 
 **Упътване**
 
