@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE channel [
+    <!ELEMENT channel (item+, title, link, image*, language?, description)>
+    <!ATTLIST channel version CDATA "0.0">
+    <!ELEMENT item (
+        (title, link, description?) | 
+        (link, title, description?) | 
+        (description?, title, link) | 
+        (description?, link, title) | 
+        (title, description?, link) | 
+        (link, description?, title))
+    >
+    <!ELEMENT Prerequisites (Prereq+)>
+    <!ELEMENT title (#PCDATA)>
+    <!ELEMENT link (#PCDATA)>
+    <!ELEMENT image (title | link | url)*>
+    <!ATTLIST image src ENTITY #REQUIRED>
+    <!ELEMENT language (#PCDATA)>
+    <!ELEMENT url (#PCDATA)>
+
+    <!-- 1. -->
+    <!NOTATION JPG SYSTEM "image/jpeg"> 
+    <!NOTATION GIF PUBLIC "GIF 1.0"> 
+    <!NOTATION PNG PUBLIC "PNG 1.0" "image/png">
+    <!ENTITY xmlJPGAddress SYSTEM "https://eathenasolutions.com/wp-content/uploads/Fotolia_12413408_XS.jpg" NDATA JPG> 
+    <!ENTITY xmlPNGAddress SYSTEM "https://eathenasolutions.com/wp-content/uploads/Fotolia_12413408_XS.jpg" NDATA PNG> 
+    <!ENTITY W3GIFAddress PUBLIC "-//W3C//GIF logo//EN" "https://www.w3.org/2008/site/images/logo-w3c-screen-lg" NDATA GIF> 
+
+    <!-- 2. -->
+    <!ENTITY goto "Go to our page">
+
+    <!-- 3. -->
+    <!ENTITY % title "title">
+
+    <!-- 4. -->
+    <!ENTITY % channelElements "(item+, title, link, language?, image*, description)" > 
+
+    <!-- 5. -->
+    <!ELEMENT description (#PCDATA | description)*>
+]>
+
+<channel version="1">
+    <item>
+        <title>Item</title>
+        <link>Link</link>
+        <description>Description</description>
+    </item>
+    <title>Title 1</title>
+    <link>Channel link</link>
+    <image src="xmlJPGAddress">
+        <title>Image title</title>
+        <link>&goto;</link>
+        <url>https://rss.com/images/rss.jpg</url>
+    </image>
+
+    <image src="xmlPNGAddress">
+        <title>RSS Schema</title>
+        <link>&goto;</link>
+        <url>https://rss.com/images/rss.png</url>
+    </image>
+    
+    <language>EN</language>
+
+    <description>
+        Alabalanica changel with
+        <description>
+            recursive description
+            <description>
+                You get it
+                <description>
+                    the end
+                </description>
+            </description>
+        </description>
+    </description>
+</channel>

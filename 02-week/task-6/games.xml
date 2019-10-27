@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE games [
+    <!ELEMENT games (game)*>
+    <!ELEMENT game (home-team, ex-team, scores, yellows, reds)>
+    <!ELEMENT home-team (#PCDATA)>
+    <!ELEMENT ex-team (#PCDATA)>
+    <!ELEMENT scores (score)*>
+    <!ELEMENT yellows (player)*>
+    <!ELEMENT reds (player)*>
+    <!ELEMENT score (player)*>
+    <!ELEMENT player (#PCDATA)>
+    <!ATTLIST game score CDATA #REQUIRED>
+    <!ATTLIST score time CDATA #REQUIRED>
+    <!ATTLIST score type (field|penalty) #IMPLIED>
+]>
+<games>
+    <game score="1-1">
+        <home-team>Roma</home-team>
+        <ex-team>Lazio</ex-team>
+        <scores>
+            <score time="15">
+                <player>Klose</player>
+            </score>
+            <score time="85" type="penalty">
+                <player>Tox</player>
+            </score>
+        </scores>
+        <yellows>
+            <player>Tox</player>
+            <player>Hernanes</player>
+        </yellows>
+        <reds>
+            <player>Kjaer</player>
+        </reds>
+    </game>
+</games>

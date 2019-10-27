@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!ELEMENT games (game)*>
+<!ELEMENT game (home-team, ex-team, scores, yellows, reds)>
+<!ELEMENT home-team (#PCDATA)>
+<!ELEMENT ex-team (#PCDATA)>
+<!ELEMENT scores (score)*>
+<!ELEMENT yellows (player)*>
+<!ELEMENT reds (player)*>
+<!ELEMENT score (player)*>
+<!ELEMENT player (#PCDATA)>
+<!ATTLIST game score CDATA #REQUIRED>
+<!ATTLIST score time CDATA #REQUIRED>
+<!ATTLIST score type (field|penalty) #IMPLIED>

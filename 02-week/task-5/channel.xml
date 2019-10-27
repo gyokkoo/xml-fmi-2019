@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE channel [
+    <!ELEMENT channel (item+, title, link, image*, language?, description)>
+    <!ATTLIST channel version CDATA "0.0">
+    <!ELEMENT item (
+        (title, link, description?) | 
+        (link, title, description?) | 
+        (description?, title, link) | 
+        (description?, link, title) | 
+        (title, description?, link) | 
+        (link, description?, title))
+    >
+    <!ELEMENT Prerequisites (Prereq+)>
+    <!ELEMENT title (#PCDATA)>
+    <!ELEMENT link (#PCDATA)>
+    <!ELEMENT image (title | link | url)*>
+    <!ELEMENT language (#PCDATA)>
+    <!ELEMENT description (#PCDATA)>
+    <!ELEMENT url (#PCDATA)>
+]>
+
+<channel version="1">
+    <item>
+        <title>Item</title>
+        <link>Link</link>
+        <description>Description</description>
+    </item>
+    <title>Title 1</title>
+    <link>Channel link</link>
+    <image>
+        <title>Image title</title>
+        <link>Image link</link>
+        <url>Image url</url>
+    </image>
+    <description>Alabalanica.</description>
+</channel>

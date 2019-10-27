@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!ELEMENT Course_Catalog (Department+)>
+<!ELEMENT Department (Title, Chair, Course+)>
+<!ELEMENT Title (#PCDATA)>
+<!ELEMENT Chair (Professor)>
+<!ELEMENT Course (Title, Description?, Instructors, Prerequisites?)>
+<!ATTLIST Course
+    Number (CS106A | CS106B | CS107 | CS109 | CS124 | CS143 | CS145 | CS221 | CS228 | CS229 | EE108A | EE108B | LING180) #REQUIRED
+    Enrollment (1070 | 110 | 130 | 180 | 280 | 320 | 500 | 60 | 620 | 90) #IMPLIED
+>
+<!ELEMENT Prereq (#PCDATA)>
+<!ELEMENT Lecturer (First_Name, Middle_Initial?, Last_Name)>
+<!ELEMENT Last_Name (#PCDATA)>
+<!ELEMENT Professor (First_Name, Middle_Initial?, Last_Name)>
+<!ATTLIST Department Code (CS | EE | LING) #REQUIRED>
+<!ELEMENT First_Name (#PCDATA)>
+<!ELEMENT Description (#PCDATA)>
+<!ELEMENT Instructors ((Lecturer, Professor*) | (Professor+, Lecturer?))>
+<!ELEMENT Prerequisites (Prereq+)>
+<!ELEMENT Middle_Initial (#PCDATA)>

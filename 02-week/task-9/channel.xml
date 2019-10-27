@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE channel SYSTEM "channel.dtd" [
+    <!ENTITY % variantAllMandatory "IGNORE">
+    <!ENTITY % variantAllElements "INCLUDE">
+]>
+<channel version="1.0">
+    <item>
+        <link>https://rss.com/index.html</link>
+        <title>RSS</title>
+    </item>
+    <item>
+        <description>RSS specification 2</description>
+        <title>RSS2</title>
+        <link>https://rss.com/index.html</link>
+    </item>
+    <item>
+        <link>https://rss.com/index.html</link>
+        <title>RSS3</title>
+        <description>RSS specification 3</description>
+    </item>
+    <title>Title of the channel</title>
+    <link>https://rss.com</link>
+    It is valid for the variant variantAllElements
+    <language>EN</language>
+    <image src="xmlJPGAddress">
+        <url>https://rss.com/images/rss.png</url>
+        <title>RSS Schema</title>
+        <link>&goto;</link>
+    </image>
+    <image src="xmlPNGAddress">
+        <url>https://rss.com/images/rss.gif</url>
+        <title>RSS Schema</title>
+        <link>&goto;</link>
+    </image>
+
+    <description>Description of the channel</description>
+</channel>
