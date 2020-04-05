@@ -1,0 +1,32 @@
+<!ELEMENT Bulgaria (Regions, Types, Mountains)>
+
+<!-- Regions validation -->
+<!ELEMENT Regions (Region+)>
+<!ELEMENT Region (RegionName)>
+<!ATTLIST Region RegionID ID #REQUIRED>
+<!ATTLIST Region MountainRef IDREFS #IMPLIED>
+<!ELEMENT RegionName (#PCDATA)>
+
+<!-- Types validation -->
+<!ELEMENT Types (Type+)>
+<!ELEMENT Type (TypeName)>
+<!ATTLIST Type TypeID ID #REQUIRED>
+<!ELEMENT TypeName (#PCDATA)>
+<!ATTLIST Type MountainRef IDREFS #IMPLIED>
+<!ELEMENT image EMPTY>  
+
+<!-- Mountains validation -->
+<!ELEMENT Mountains (Mountain+)>
+<!ELEMENT Mountain (Name, Peak, Elevation, Description, Image?)>
+<!ELEMENT Name (#PCDATA)>
+<!ELEMENT Peak (#PCDATA)>
+<!ELEMENT Elevation (#PCDATA)>
+<!ELEMENT Description (#PCDATA)>
+
+<!ATTLIST Mountain MountainId ID #REQUIRED>
+<!ATTLIST Mountain RegionRef IDREF #IMPLIED>
+<!ATTLIST Mountain TypeRef IDREF #IMPLIED>
+
+<!ELEMENT Image EMPTY>
+<!ATTLIST Image href ENTITY #REQUIRED>
+<!NOTATION jpeg PUBLIC "jpeg viewer">

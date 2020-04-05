@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="MountainsStyle.xsl" ?>
+<!DOCTYPE Bulgaria SYSTEM "MountainsValidation.dtd" [
+	<!ENTITY rila SYSTEM "images/rila.jpeg" NDATA jpeg>
+	<!ENTITY pirin SYSTEM "images/pirin.jpeg" NDATA jpeg>
+	<!ENTITY rodopi SYSTEM "images/rodopi.jpeg" NDATA jpeg>
+	<!ENTITY staraplanina SYSTEM "images/staraplanina.jpeg" NDATA jpeg>
+	<!ENTITY vitosha SYSTEM "images/vitosha.jpeg" NDATA jpeg>
+	<!ENTITY osogovo SYSTEM "images/osogovo.jpeg" NDATA jpeg>
+	<!ENTITY strandja SYSTEM "images/strandja.jpeg" NDATA jpeg>
+	<!ENTITY srednagora SYSTEM "images/srednagora.jpeg" NDATA jpeg>
+]>
+<Bulgaria>
+	<!-- Regions -->
+	<Regions>
+		<Region RegionID="YZ" MountainRef="Rila Pirin Vitosha">
+			<RegionName>Югозападен</RegionName>
+		</Region>
+		<Region RegionID="YI" MountainRef="Strandja">
+			<RegionName>Югоизточен</RegionName>
+		</Region>
+		<Region RegionID="Y" MountainRef="Rodopi">
+			<RegionName>Южен</RegionName>
+		</Region>
+		<Region RegionID="C" MountainRef="StaraPlanina SrednaGora">
+			<RegionName>Централен</RegionName>
+		</Region>
+		<Region RegionID="Z" MountainRef="Osogovo">
+			<RegionName>Западен</RegionName>
+		</Region>
+	</Regions>
+	<!-- Types -->
+	<Types>
+		<Type TypeID="low" MountainRef="Strandja">
+			<TypeName>Нисък</TypeName>
+		</Type>
+		<Type TypeID="medium" MountainRef="StaraPlanina Rodopi SrednaGora">
+			<TypeName>Средно-висок</TypeName>
+		</Type>
+		<Type TypeID="high" MountainRef="Rila Pirin Vitosha Osogovo">
+			<TypeName>Висок</TypeName>
+		</Type>
+	</Types>
+	<!-- Mountains -->
+	<Mountains>
+		<Mountain MountainId="Rila" RegionRef="YZ" TypeRef="high">
+			<Name>Рила</Name>
+			<Peak>Мусала</Peak>
+			<Elevation>2925 м.</Elevation>
+			<Description>
+					Рила е най-високата планина в България и на целия Балкански полуостров (с най-висок връх Мусала -надморска височина 2925 м).
+					Най-старото име на планината е Доункас, дадено и от траките. Означава място с много вода. Тракийско е и другото и име - Роула, което славяните видоизменят на Рила. То също е свързано с многоводието на планината (означава “водна планина”). Това название не е случайно. В Рила има около 200 езера и множество минерални извори. От тук извират едни от най – пълноводните и дълги реки на Балканите (Искър, Марица, Места и др.).
+			</Description>
+			<Image href="rila"/>
+		</Mountain>
+		<Mountain MountainId="Pirin" RegionRef="YZ" TypeRef="high">
+			<Name>Пирин</Name>
+			<Peak>Вихрен</Peak>
+			<Elevation>2914 м.</Elevation>
+			<Description>
+				Пирин е втората по височина планина в България, с най-висок връх Вихрен (2914 м.). 
+				Най-старото познато име на планината е Орбелус - белоснежна, познато ни от траките, докато славяните са я наричали Перин или Перун. 
+				Българите традиционно смятат, че името на Пирин идва от това на славянския бог Перун – повелителят на гръмотевиците.
+				По-сериозните изследвания обаче показват, че имената Пирин и Перун съвпадат чисто случайно и името на Пирин идва от тракийската дума “перинтос”, което означава скала, която пък идва от хетската "перунаш".
+			</Description>
+			<Image href="pirin"/>
+		</Mountain>
+		<Mountain MountainId="Rodopi" RegionRef="Y" TypeRef="medium">
+			<Name>Родопи</Name>
+			<Peak>Голям Перелик</Peak>
+			<Elevation>2190 м.</Elevation>
+			<Description>
+				Родопите е най-обширната планина в България и заема около една седма част от българската територия. 
+				Името на планината Родопи е с тракийски произход. 
+				Род-опа се тълкува като първоначално име на река със значение „ръждива/червеникава вода“.
+			</Description>
+			<Image href="rodopi"/>
+		</Mountain>
+		<Mountain MountainId="StaraPlanina" RegionRef="C" TypeRef="medium">
+			<Name>Стара Планина</Name>
+			<Peak>Ботев</Peak>
+			<Elevation>2190 м.</Elevation>
+			<Description>
+				Стара планина се простира по цялата дължина на България и разделя страната на Северна и Южна България. 
+				Най-високият и? връх е Ботев (2376 м).
+				Нарича се още Балкан, откъдето произлиза и името на Балканския полуостров. Древното римско име на Стара планина е Хемус.
+			</Description>
+			<Image href="staraplanina"/>
+		</Mountain>
+		<Mountain MountainId="Vitosha" RegionRef="Z" TypeRef="high">
+			<Name>Витоша</Name>
+			<Peak>Черни връх</Peak>
+			<Elevation>2290 м.</Elevation>
+			<Description>
+				Витоша е уникална! За нея е писано много, с възхищение и респект! Въпреки това, посещавайки я, всеки път откриваме нещо ново и непознато. Най- дългата пещера в България, огромното растително богатство, уникалните каменни реки, изобилието на води близостта до столицата обясняват интереса към нея. Напълно закономерно тук е първата проява на организиран туризъм у нас, подбудена от родолюбивият Алеко Константинов. Днес планината се радва на най- големия поток от туристи в нашата страна.
+			</Description>
+			<Image href="vitosha"/>
+		</Mountain>
+		<Mountain MountainId="SrednaGora" RegionRef="C" TypeRef="medium">
+			<Name>Средна гора</Name>
+			<Peak>Голям Богдан</Peak>
+			<Elevation>1603 м.</Elevation>
+			<Description>
+				Средна гора е разположена между Задбалканските котловини на север и Горнотракийската низина на юг. Средна гора е средновисока планина и е разположена в централната част на България, успоредно на Старопланинската верига. На запад Средна гора достига до течението на река Искър, а на изток до завоя на река Тунджа, който се намира северно от град Ямбол. Планината е дълга 285 километра, а най-голямата ѝ ширина е около 50 километра. Най-високата ѝ точка е връх Голям Богдан (1604 м).
+			</Description>
+			<Image href="srednagora"/>
+		</Mountain>
+		<Mountain MountainId="Osogovo" RegionRef="Z" TypeRef="high">
+			<Name>Осогово</Name>
+			<Peak>Руен</Peak>
+			<Elevation>2251 м.</Elevation>
+			<Description>
+				Осоговската планина или Осогово е планина в България и Република Македония. Най-високата ѝ точка е вр. Руен - 2251 метра, който се намира на територията на България и е един от нейните 100 национални туристически обекта. Най-високата точка на територията на Република Македония е Царев връх (на македонски литературен език Царев Врв) - 2085 м.
+			</Description>
+			<Image href="osogovo"/>
+		</Mountain>
+		<Mountain MountainId="Strandja" RegionRef="YI" TypeRef="low">
+			<Name>Странджа</Name>
+			<Peak>Махиада</Peak>
+			<Elevation>1031 м.</Elevation>
+			<Description>
+				Странджа заема площ от около 10000 кв. км. на територията на югоизточна България и северната част на европейска Турция. У нас се намират само северните и североизточните й разклонения, които имат хълмисто-нископланински характер и са силно разчленени от сравнително гъста долинна мрежа. По-голямата и по-висока част на планината е разположена в Турция. Странджа има ясно изразена северозападно-югоизточна посока на простиране, като най-високият й връх Махиада (1031 м) е в турска територия.
+			</Description>
+			<Image href="strandja"/>
+		</Mountain>
+	</Mountains>
+</Bulgaria>
